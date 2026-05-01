@@ -1,0 +1,16 @@
+.bg-institucional {
+  background-color: #068587;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  visibility: visible;
+}
+
+.card img {
+  opacity: 0.7;
+}
+
+.card img:hover {
+  opacity: 1;
+}
