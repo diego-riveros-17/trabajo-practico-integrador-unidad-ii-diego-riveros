@@ -6,16 +6,279 @@
     <title>Instituto Politecnico Formosa</title>
 
     <link
+      rel="icon"
+      href="assets/img/logo_institucional.jpg"
+      type="image/png"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-institucional">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand col-lg-1 col-md-3 col-sm-2" href="#">
+            <img src="assets/img/logo.png" alt="Logo" class="img-fluid" />
+          </a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCollapse"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="institucional.html">Institucional</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="carreras.html"
+                  aria-expanded="false"
+                  >Oferta Academica</a
+                >
+                <ul
+                  class="dropdown-menu mx-0 shadow w-220px"
+                  data-bs-theme="light"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item my-1 text-uppercase text-muted"
+                      href="#"
+                    >
+                      Tecnicatura Superior en Desarrollo de Software
+                      Multiplataforma
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item my-1 text-uppercase text-muted"
+                      href="#"
+                    >
+                      Tecnicatura Superior en Telecomunicaciones
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item my-1 text-uppercase text-muted"
+                      href="#"
+                    >
+                      Tecnicatura Superior en Mecatronica
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li>
+                    <a
+                      class="dropdown-item my-1 text-uppercase text-muted"
+                      href="#"
+                    >
+                      Tecnicatura Superior en Quimica Industrial
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="contacto.html" class="nav-link" aria-disabled="true"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main>
-      <h1>Esta es la estructura base para iniciar con el proyecto</h1>
+      <section>
+        <div class="container">
+          <div class="accordion mx-2 my-5" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button text-black fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Historia
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body small text-muted">
+                  <p>
+                    La historia del
+                    <strong>Instituto Politécnico Formosa</strong> y su
+                    Tecnicatura Superior en Mecatrónica se remonta a julio de
+                    2013, cuando surgió la idea de crear un
+                    <strong
+                      >Polo Científico, Tecnológico e Innovación (PCTI)</strong
+                    >
+                    cerca de la ciudad de Formosa. Esto impulsó discusiones
+                    sobre trayectos formativos adaptados a las necesidades
+                    provinciales y del mercado laboral, envisionando un
+                    instituto tecnológico que integrara teoría y práctica.
+                  </p>
+                  <h6>Orígenes y Desarrollo Conceptual (2013-2014)</h6>
+                  <p>
+                    Tras una audiencia pública para el PCTI, se propuso una
+                    formación paralela al polo, destacando la
+                    <strong>Tecnicatura en Mecatrónica</strong> como carrera
+                    clave. Esta combinaría ciencias básicas, electrónica,
+                    mecánica e informática, preparando egresados para integrar
+                    equipos en producción, control y operación de maquinaria
+                    industrial. Se analizaron planes de estudio de pocas
+                    instituciones argentinas existentes y se exploraron nexos
+                    con especialistas. En 2014, con un perfil de egresado más
+                    definido, se revisaron currículos nacionales e
+                    internacionales, consultando egresados y expertos. La
+                    mecatrónica se define como una disciplina sinérgica que une
+                    electrónica, mecánica, control automático y TI para diseñar
+                    sistemas electromecánicos inteligentes, resolver problemas
+                    industriales y fomentar innovación.
+                  </p>
+                  <h6>
+                    Diseño Curricular y Creación Institucional (2016-2018)
+                  </h6>
+                  <p>
+                    Hacia fines de 2016 y durante 2017, se colaboró con la
+                    Dirección de Educación Técnica de Formosa, el Ingeniero
+                    Petzl del INET, y el formoseño Francisco Pielmann (egresado
+                    de UTN Córdoba), asesorados por el Ministerio de Educación.
+                    Esto generó estándares curriculares y un documento base,
+                    discutido con autoridades locales. El
+                    <strong>31 de enero de 2018</strong>, por
+                    <strong
+                      >Decreto Provincial N° 18/2018, se creó el Instituto
+                      Politécnico Formosa</strong
+                    >, enfocado en articular estudio-trabajo,
+                    investigación-producción y teoría-práctica. Su misión:
+                    formar técnicos para producción industrial, servicios de
+                    alta tecnología y sectores afines.
+                  </p>
+                  <p>
+                    La tecnicatura, de tres años de duración, habilita a
+                    egresados para configurar, supervisar y optimizar equipos de
+                    automatización (mecánica, neumática, hidráulica, eléctrica y
+                    electrónica), siguiendo protocolos de calidad y seguridad, e
+                    incluso diseñar nuevos sistemas. El proceso incluyó
+                    entrevistas a especialistas, docentes potenciales y
+                    gestiones para equipamiento.
+                  </p>
+                  <h6>Inicio de Clases</h6>
+                  Las clases comenzaron el 19 de marzo de 2018 en la EPET N° 1,
+                  con 40 alumnos iniciales, marcando el lanzamiento efectivo de
+                  esta iniciativa estratégica para el desarrollo tecnológico de
+                  Formosa.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container" id="featured-3">
+          <h2 class="pb-2 border-bottom text-center">
+            Misión, Visión y Estructura Organizativa
+          </h2>
+          <div
+            class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-around"
+          >
+            <div class="feature col">
+              <h5 class="text-body-emphasis">Visión</h5>
+              <p class="small text-muted">
+                Somos una institución de educación superior de avanzada,
+                dedicada a desarrollar procesos sistemáticos de formación que
+                articulan el estudio, el trabajo, la investigación y la
+                producción. Nuestro propósito es formar técnicos altamente
+                capacitados para integrarse en equipos de producción industrial
+                y servicios de alta tecnología, contribuyendo al desarrollo
+                socioeconómico de la provincia.
+              </p>
+            </div>
+            <div class="feature col">
+              <h5 class="text-body-emphasis">Misión</h5>
+              <p class="small text-muted">
+                Consolidarnos como un referente regional en innovación educativa
+                y tecnológica, donde la teoría y la práctica converjan para
+                responder a los desafíos del mercado global, promoviendo la
+                optimización de procesos y el diseño de sistemas inteligentes
+                bajo estándares de calidad y seguridad.
+              </p>
+            </div>
+            <div class="feature col">
+              <h5 class="text-body-emphasis">Estrutura organizativa</h5>
+              <ol class="list-group list-group-numbered small">
+                <li class="list-group-item border-0 text-muted m-0 p-0">
+                  <b>Consejo Directivo:</b> Responsable de las definiciones
+                  políticas y pedagógicas del instituto.
+                </li>
+                <li class="list-group-item border-0 text-muted m-0 p-0">
+                  <b>Secretaría Académica:</b> Encargada de la gestión de los
+                  planes de estudio, calendarios escolares y la coordinación de
+                  las trayectorias formativas de los estudiantes.
+                </li>
+                <li class="list-group-item border-0 text-muted m-0 p-0">
+                  <b>Coordinación de Carrera:</b> Responsables de áreas
+                  específicas como Mecatrónica, Desarrollo de Software,
+                  Telecomunicaciones o Quimica Industrial.
+                </li>
+                <li class="list-group-item border-0 text-muted m-0 p-0">
+                  <b>Prácticas Profesionalizantes:</b> Área dedicada a
+                  establecer nexos con el IPF y empresas del sector para la
+                  inserción y práctica de los alumnos.
+                </li>
+                <li class="list-group-item border-0 text-muted m-0 p-0">
+                  <b>Infraestructura y Equipamiento:</b> Gestión de los
+                  laboratorios y recursos tecnológicos necesarios para la
+                  formación técnica.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer
+      class="py-5 footer mt-auto text-center text-body-secondary bg-institucional"
+    >
+      <p>Instituto Politecnico Formosa</p>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
