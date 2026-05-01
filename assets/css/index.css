@@ -1,0 +1,9 @@
+.bg-institucional {
+  background-color: #068587;
+}
+
+.text-carousel {
+  text-shadow:
+    0 0 10px #0ff,
+    0 0 20px #0ff;
+}
