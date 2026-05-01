@@ -59,8 +59,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
+                  href="carreras.html"
                   aria-expanded="false"
                   >Oferta Academica</a
                 >
@@ -160,73 +159,26 @@
             ></button>
           </div>
 
-          <div class="carousel-inner">
-            <div class="carousel-item active vh-100" data-bs-interval="2000">
-              <img
-                src="assets/img/ipf.jpeg"
-                class="d-block w-100 h-100 object-fit-cover"
-                alt="..."
-              />
-
-              <div
-                class="carousel-caption d-flex flex-column justify-content-center h-100 top-0 text-center text-black text-carousel"
+          <div class="carousel-inner bg-black">
+            <div class="carousel-item active vh-100" data-bs-interval="20000">
+              <video
+                class="h-100 w-100 object-fit-fill"
+                autoplay
+                loop
+                muted
+                playsinline
               >
-                <div class="container">
-                  <h1 class="display-5 fw-bold text-uppercase mb-3">
-                    Instituto Politecnico Formosa. Dr. Alberto Marcelo Zorrilla
-                  </h1>
-                  <p class="fs-5 mb-5">
-                    Educación de calidad con tecnologías de última generación, y
-                    profesores altamente capacitados
-                  </p>
-                </div>
-              </div>
+                <source src="assets/img/IPF.mp4" />
+                Tu navegador no soporta etiquetas de video.
+              </video>
             </div>
 
-            <div class="carousel-item vh-100" data-bs-interval="5000">
+            <div class="carousel-item vh-100" data-bs-interval="2000">
               <img
-                src="assets/img/transporte.png"
+                src="assets/img/Instituto-Politecnico-Formosa-IPF.jpeg"
                 class="d-block w-100 h-100 object-fit-cover"
                 alt="..."
               />
-
-              <div
-                class="carousel-caption d-flex flex-column justify-content-center h-100 top-0 text-center text-black text-carousel"
-              >
-                <div class="container">
-                  <h1 class="display-5 fw-bold text-uppercase mb-3">
-                    Transporte gratuito
-                  </h1>
-                  <p class="fs-5 mb-5">
-                    El instituto te ofrece traslado gratuito. Te recogemos en
-                    puntos estrategicos de la ciudad.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item vh-100" data-bs-interval="5000">
-              <img
-                src="assets/img/comerdor.png"
-                class="d-block w-100 h-100 object-fit-cover"
-                alt="..."
-              />
-
-              <div
-                class="carousel-caption d-flex flex-column justify-content-end h-100 top-0 text-center text-black text-carousel"
-              >
-                <div class="container">
-                  <h1 class="display-5 fw-bold text-uppercase mb-3">
-                    Comedor gratuito
-                  </h1>
-                  <p class="fs-5 mb-5">
-                    Cuando llegas a las instalaciones,te recibimos con el
-                    desayuno para iniciar la jordana. Al mediodia tambien te
-                    ofrecemos un almuerzo, con menú variado para toda la semana
-                    y todo totalmente gratuito
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div class="carousel-item vh-100" data-bs-interval="5000">
@@ -235,22 +187,6 @@
                 class="d-block w-100 vh-100 object-fit-cover"
                 alt="..."
               />
-
-              <div
-                class="carousel-caption d-flex flex-column justify-content-center h-100 top-0 text-center text-black text-carousel"
-              >
-                <div class="container">
-                  <h1 class="display-5 fw-bold text-uppercase mb-3">
-                    Recursos gratuitos
-                  </h1>
-                  <p class="fs-5 mb-5">
-                    Los alumnos cuentan dentro las instalaciones con los
-                    recursos tecnologicos necesarios para su cursadas, cada
-                    estudiante recibe una notebook de última generación con las
-                    especificaciones requeridas para sus actividades.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -274,17 +210,85 @@
           </button>
         </div>
       </section>
+
+      <section class="m-5">
+        <h2 class="fw-bold text-center">El IPF te ofrece</h2>
+
+        <div class="album py-3">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm h-100 rounded">
+                  <div class="ratio ratio-16x9">
+                    <img
+                      class="rounded-top"
+                      src="assets/img/transporte.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Servicio de Transporte</h5>
+                    <p class="card-text">
+                      El instituto te ofrece traslado gratuito. Te recogemos en
+                      puntos estrategicos de la ciudad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm h-100 rounded">
+                  <div class="ratio ratio-16x9">
+                    <img
+                      class="rounded-top"
+                      src="assets/img/comerdor.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Servicio de Comedor</h5>
+                    <p class="card-text">
+                      Cuando llegas a las instalaciones,te recibimos con el
+                      desayuno para iniciar la jordana. Al mediodia tambien te
+                      ofrecemos un almuerzo, con menú variado para toda la
+                      semana y todo totalmente gratuito
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm h-100 rounded">
+                  <div class="ratio ratio-16x9">
+                    <img
+                      class="rounded-top"
+                      src="assets/img/notebook.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Recursos gratuitos y Profesionales altamente capacitados
+                    </h5>
+                    <p class="card-text">
+                      Los alumnos cuentan dentro las instalaciones con los
+                      recursos tecnologicos necesarios para su cursadas, cada
+                      estudiante recibe una notebook de última generación con
+                      las especificaciones requeridas para sus actividades.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer
       class="py-5 footer mt-auto text-center text-body-secondary bg-institucional"
     >
-      <p>
-        Blog template built for
-        <a href="https://getbootstrap.com/">Bootstrap</a> by
-        <a href="https://x.com/mdo">@mdo</a>.
-      </p>
-      <p class="mb-0"><a href="#">Back to top</a></p>
+      <p>Instituto Politecnico Formosa</p>
     </footer>
 
     <script

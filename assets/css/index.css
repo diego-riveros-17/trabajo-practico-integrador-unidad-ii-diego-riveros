@@ -7,3 +7,16 @@
     0 0 10px #0ff,
     0 0 20px #0ff;
 }
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  visibility: visible;
+}
+
+.card img {
+  opacity: 0.7;
+}
+
+.card img:hover {
+  opacity: 1;
+}
