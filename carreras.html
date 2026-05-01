@@ -6,16 +6,548 @@
     <title>Instituto Politecnico Formosa</title>
 
     <link
+      rel="icon"
+      href="assets/img/logo_institucional.jpg"
+      type="image/png"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/carreras.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-institucional">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand col-lg-1 col-md-3 col-sm-2" href="#">
+            <img src="assets/img/logo.png" alt="Logo" class="img-fluid" />
+          </a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCollapse"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="institucional.html">Institucional</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="carreras.html"
+                  aria-expanded="false"
+                  >Oferta Academica</a
+                >
+                <ul
+                  class="dropdown-menu mx-0 shadow w-220px"
+                  data-bs-theme="light"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item my-1 text-uppercase text-muted"
+                      href="#"
+                    >
+                      Tecnicatura Superior en Desarrollo de Software
+                      Multiplataforma
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item my-1 text-uppercase text-muted"
+                      href="#"
+                    >
+                      Tecnicatura Superior en Telecomunicaciones
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item my-1 text-uppercase text-muted"
+                      href="#"
+                    >
+                      Tecnicatura Superior en Mecatronica
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+
+                  <li>
+                    <a
+                      class="dropdown-item my-1 text-uppercase text-muted"
+                      href="#"
+                    >
+                      Tecnicatura Superior en Quimica Industrial
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="contacto.html" class="nav-link" aria-disabled="true"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main>
-      <h1>Esta es la estructura base para iniciar con el proyecto</h1>
+      <section class="container my-3 py-3">
+        <div class="album py-3">
+          <div class="container-fluid">
+            <div class="text-center">
+              <h2 class="py-4 fw-bold">
+                Ofertas Academicas del Instituto Politecnico Formosa. Dr.
+                Marcelo Alberto Zorrilla
+              </h2>
+            </div>
+            <div
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
+            >
+              <div class="col-lg-5">
+                <div class="card h-100">
+                  <img
+                    src="assets/img/tsdsm.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Tecnicatura Superior en Desarrollo de Software
+                      Multiplataforma
+                    </h5>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalTSDSM"
+                    >
+                      Ver Info
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="card h-100">
+                  <img
+                    src="assets/img/telecomunicaciones.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Tecnicatura Superior en Telecomunicaciones
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalTST"
+                    >
+                      Ver Info
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5 justify-content-center"
+            >
+              <div class="col-lg-5">
+                <div class="card h-100">
+                  <img
+                    src="assets/img/mecatronica.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Tecnicatura Superior en Mecatronica
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalTSM"
+                    >
+                      Ver Info
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="card h-100">
+                  <img
+                    src="assets/img/quimica-industrial.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Tecnicatura Superior en Quimica Industrial
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalTSQI"
+                    >
+                      Ver Info
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- modal info TSDSM -->
+
+      <div class="modal fade" id="modalTSDSM" tabindex="-1">
+        <div
+          class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row g-0 shadow-lg border rounded bg-triptico">
+                <div
+                  class="col-md-6 p-5 border-end border-secondary border-opacity-25"
+                >
+                  <h5 class="fw-bold mb-3">
+                    Tecnicatura Superior en Desarrollo de Software
+                    Multiplataforma
+                  </h5>
+                  <p class="small">
+                    La carrera tiene una duración de dos años con una carga
+                    horaria de 2.144 horas, con resolución N° 1416/21 del
+                    Ministerio de Cultura y Educación de la Provincia de
+                    Formosa.
+                  </p>
+
+                  <h5 class="fw-bold mt-4 mb-2">
+                    Alcance del Perfil Profesional
+                  </h5>
+                  <p class="small" style="text-align: justify">
+                    El graduado de la Tecnicatura Superior en Desarrollo de
+                    Software Multiplataforma tendrá la capacidad de concebir
+                    soluciones innovadoras a los problemas asociados a las
+                    tareas de análisis, diseño, programación e implantación de
+                    software en diferentes plataformas, entornos y
+                    arquitecturas. Los mismos deben ser capaces de desarrollar
+                    soluciones demandadas por las empresas, la industria y el
+                    estado formoseño, ya sea individualmente o en equipos, y
+                    basados en una amplia experiencia practica obtenida durante
+                    el recorrido de la tecnicatura. Las empresas, el estado, las
+                    organizaciones locales, regionales o extranjeras, demandan
+                    estos perfiles junto con otros servicios de asesoramiento y
+                    consultoría, optimizando el desempeño de las insti-
+                    tuciones.
+                  </p>
+                </div>
+
+                <div class="col-md-6 p-5">
+                  <h5 class="fw-bold">Régimen de Cursado</h5>
+                  <p class="small mb-4">
+                    La carrera se divide en cinco cuatrimestres, durante los
+                    cuales el estudiante deberá regularizar los módulos
+                    correspondientes al cuatrimestre en curso.
+                  </p>
+
+                  <h5 class="fw-bold">Horario y modalidad de cursado</h5>
+                  <p class="small mb-4">
+                    Jornada intensiva de lunes a viernes de 9 a 17 horas con
+                    almuerzo incluido.
+                  </p>
+
+                  <h5 class="fw-bold">Lugar</h5>
+                  <p class="small mb-4">
+                    Polo Científico, Tecnológico & Innovación. Traslado con
+                    transporte público habilitado especialmente para los
+                    estudiantes.
+                  </p>
+
+                  <h5 class="fw-bold">Requisitos de Admisión</h5>
+
+                  <ul class="list-unstyled small">
+                    <li>- Título Secundario</li>
+                    <li>- Asistencia al Módulo de Nivelación (80%)</li>
+                    <li>- Aprobación del Módulo de Nivelación</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal info TST -->
+      <div class="modal fade" id="modalTST" tabindex="-1">
+        <div
+          class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row g-0 shadow-lg border rounded bg-triptico">
+                <div
+                  class="col-md-6 p-5 border-end border-secondary border-opacity-25"
+                >
+                  <h5 class="fw-bold mb-3">
+                    Tecnicatura Superior en Telecomunicaciones
+                  </h5>
+                  <p class="small">
+                    La carrera tiene una duración de 2,5 años con una carga
+                    horaria de 2252 horas reloj; al finalizar la misma se
+                    otorgará el título de Técnico Superior en Telecomunicaciones
+                    expedido por el Ministerio de Cultura y Educación de la
+                    Provincia de Formosa.
+                  </p>
+
+                  <h5 class="fw-bold mt-4 mb-2">
+                    Alcance del Perfil Profesional
+                  </h5>
+                  <p class="small" style="text-align: justify">
+                    El Técnico Superior en Telecomunicaciones podrá, en el
+                    ejercicio de su profesión, desarrollar proyectos en el área
+                    específica, así como también gestionar y supervisar el
+                    montaje y mantenimiento de sistemas y equipos de
+                    telecomunicaciones y eventual hardware informático asociado,
+                    tales como redes de banda ancha y de radiocomunicaciones
+                    fijas y móviles, sistemas telemáticos; empleando la
+                    documentación técnica, normativa y procedimientos
+                    establecidos, asegurando el funcionamiento, la calidad, la
+                    seguridad y la conservación medioambiental.
+                  </p>
+                  <h5 class="fw-bold">Destinatarios</h5>
+                  <p class="small mb-4">
+                    Jóvenes egresados de escuelas de nivel secundario,
+                    especialmente de escuelas técnicas con orientación
+                    electrónica, automatización e informática.
+                  </p>
+                </div>
+
+                <div class="col-md-6 p-5">
+                  <h5 class="fw-bold">Régimen de Cursado</h5>
+                  <p class="small mb-4">
+                    La carrera consta de cinco cuatrimestres. El estudiante
+                    deberá tener aprobado, al inicio de cada cuatrimestre, los
+                    módulos del cuatrimestre precedente.
+                  </p>
+
+                  <h5 class="fw-bold">Horario y modalidad de cursado</h5>
+                  <p class="small mb-4">
+                    Jornada intensiva de lunes a viernes de 9 a 17 horas con
+                    almuerzo incluido.
+                  </p>
+
+                  <h5 class="fw-bold">Requisitos de Admisión</h5>
+                  <p class="small mb-4">
+                    Aprobar el Curso introductorio virtual que incluye los
+                    módulos de Matemática y Física. Para aprobar se requiere un
+                    mínimo del 60 % de las actividades propuestas. Los
+                    aspirantes que resulten aprobados serán seleccionados por
+                    orden de mérito para completar un cupo máximo de 50 alumnos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal info TSM -->
+      <div class="modal fade" id="modalTSM" tabindex="-1">
+        <div
+          class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row g-0 shadow-lg border rounded bg-triptico">
+                <div
+                  class="col-md-6 p-5 border-end border-secondary border-opacity-25"
+                >
+                  <h5 class="fw-bold mb-3">
+                    Tecnicatura Superior en Mecatronica
+                  </h5>
+                  <p class="small">
+                    La carrera tiene una duración de tres años, con el
+                    reconocimiento provincial del Ministerio de Cultura y
+                    Educación de la Provincia de Formosa.
+                  </p>
+
+                  <h5 class="fw-bold mt-4 mb-2">
+                    Alcance del Perfil Profesional
+                  </h5>
+                  <p class="small" style="text-align: justify">
+                    El Técnico Superior en Mecatrónica tiene un perfil
+                    fuertemente ligado al rubro industrial; sobre todo
+                    relacionado con instalaciones y procesos destinados a la
+                    fabricación de productos, mantenimiento y servicios. Estará
+                    capacitado de acuerdo con las actividades que se desarrollan
+                    en las funciones profesionales para: configurar sistemas
+                    mecatrónicos industriales, así como para planificar,
+                    supervisar y/o ejecutar su montaje y mantenimiento,
+                    siguiendo los protocolos de calidad, de seguridad y de
+                    prevención de riesgos laborales y cuidado ambiental. La
+                    inserción laboral del técnico en Mecatrónica contempla,
+                    entre otros, su rol como:
+                  </p>
+                  <ul class="list-unstyled small">
+                    <li>
+                      - Técnico en planificación de procesos de mantenimiento de
+                      instalaciones de máquinas y equipos industriales.
+                    </li>
+                    <li>
+                      - Jefe de equipo de montajes de máquinas y equipos
+                      industriales.
+                    </li>
+
+                    <li>- Jefe de operación y/o producción industrial.</li>
+                  </ul>
+                </div>
+
+                <div class="col-md-6 p-5">
+                  <h5 class="fw-bold">Régimen de Cursado</h5>
+                  <p class="small mb-4">
+                    La carrera se divide en 6 cuatrimestres, durante los cuales
+                    el alumno deberá regularizar las materias correspondientes
+                    al cuatrimestre en curso.
+                  </p>
+
+                  <h5 class="fw-bold">Horario y modalidad de cursado</h5>
+                  <p class="small mb-4">Lunes a Viernes de 17 a 22 horas.</p>
+
+                  <h5 class="fw-bold">Requisitos de Admisión</h5>
+
+                  <ul class="list-unstyled small">
+                    <li>- Título Secundario</li>
+                    <li>- Asistencia al Módulo de Nivelación (80%)</li>
+                    <li>- Aprobación del Módulo de Nivelación</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal info TSQI -->
+      <div class="modal fade" id="modalTSQI" tabindex="-1">
+        <div
+          class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="row g-0 shadow-lg border rounded bg-triptico">
+                <div
+                  class="col-md-6 p-5 border-end border-secondary border-opacity-25"
+                >
+                  <h5 class="fw-bold mb-3">
+                    Tecnicatura Superior en Quimica Industrial
+                  </h5>
+                  <p class="small">
+                    La carrera tiene una duración de 2.5 años con una carga
+                    horaria de 2560 horas reloj, contará con una certificación
+                    propia del IPF, avalada por el Ministerio de Cultura y
+                    Educación de la Provincia de Formosa.
+                  </p>
+
+                  <h5 class="fw-bold mt-4 mb-2">
+                    Alcance del Perfil Profesional
+                  </h5>
+                  <p class="small" style="text-align: justify">
+                    El Técnico Superior en Química Industrial estará capacitado
+                    para desempeñarse en un amplio espectro de industrias con
+                    procesos tecnológicos de base química; e instalaciones que
+                    requieran un auxiliar con sólida formación teórica y amplia
+                    experiencia práctica obtenida durante su formación técnica.
+                    Su formación, lo habilitará para organizar y controlar
+                    operaciones de plantas de proceso químico y de cogeneración
+                    de energía y servicios auxiliares asociados, supervisando y
+                    asegurando su funcionamiento, puesta en marcha y parada de
+                    procesos, verificando las condiciones de seguridad, calidad
+                    y ambientales establecidas. El técnico poseerá las
+                    herramientas necesarias para llevar a cabo distintos tipos
+                    de análisis de procesos químicos con la suficiente
+                    versatilidad para adaptarse y llevar a la práctica nuevos
+                    requerimientos específicos de diferentes tipos de empresas.
+                  </p>
+                </div>
+
+                <div class="col-md-6 p-5">
+                  <h5 class="fw-bold">Destinatarios</h5>
+                  <p class="small mb-4">
+                    Preferentemente egresados de escuelas técnicas de
+                    orientación en Química, Química de Procesos, Ambiente y
+                    Salud, y Tecnología de los Alimentos. También podrán aspirar
+                    egresados de escuelas secundarias de todas las modalidades.
+                  </p>
+
+                  <h5 class="fw-bold">Régimen de Cursado</h5>
+                  <p class="small mb-4">
+                    La carrera se divide en cinco cuatrimestres, durante los
+                    cuales el estudiante deberá regularizar los módulos
+                    correspondientes al cuatrimestre en curso.
+                  </p>
+
+                  <h5 class="fw-bold">Horario y modalidad de cursado</h5>
+                  <p class="small mb-4">
+                    Jornada intensiva de lunes a viernes de 9 a 17 horas con
+                    almuerzo incluido.
+                  </p>
+
+                  <h5 class="fw-bold">Requisitos de Admisión</h5>
+                  <p class="small mb-4">
+                    Aprobar un Curso Introductorio de 4 meses de duración, que
+                    incluyen los módulos de Matemática, Física, Química, Lectura
+                    y Escritura Disciplinar y Perfil Profesional. La evaluación
+                    constará de un examen integrador. Para aprobar se requiere
+                    un mínimo de 60%. Los aprobados serán seleccionados por
+                    orden de mérito para completar el cupo máximo de 50 alumnos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <footer
+      class="py-5 footer mt-auto text-center text-body-secondary bg-institucional"
+    >
+      <p>Instituto Politecnico Formosa</p>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
