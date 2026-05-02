@@ -23,13 +23,12 @@
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/carreras.css" />
   </head>
-  <body>
+
+  <!-- Flex-column y vh-100 aseguran que el body ocupe toda la pantalla para empujar el footer -->
+  <body class="d-flex flex-column vh-100">
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-institucional">
         <div class="container-fluid">
-          <!-- <a class="navbar-brand col-lg-1 col-md-3 col-sm-2" href="#">
-            <img src="assets/img/logo.png" alt="Logo" class="img-fluid" />
-          </a> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -69,7 +68,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSe9AzkgGNea0jdtr3HEZyaziWO0itybNdPm7Zp3DpDonwURNA/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Desarrollo de Software
                       Multiplataforma
@@ -79,7 +79,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeaGhLVM4zT5jYtDpLQ6-gmvi3j8pMadaFfIjMEYQMFuyjpCw/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Telecomunicaciones
                     </a>
@@ -88,7 +89,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdYjIW4UqZ6SQRwURy4IU10kXqP_S9oKIbhhLM_wdLJ4ejmOA/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Mecatronica
                     </a>
@@ -98,7 +100,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdGl1ZjXsuCFGwEbAGe1M1Acr5XZMtYjqhKlaSJGEVvUUuT0A/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Quimica Industrial
                     </a>
@@ -117,6 +120,8 @@
     </header>
 
     <main>
+      <!-- seccion de carreras con cards y boton que activa ventana modal para
+      mostrar info relacionada con las carreras -->
       <section class="container my-3 py-3">
         <div class="album py-3">
           <div class="container-fluid">
@@ -126,9 +131,12 @@
                 Marcelo Alberto Zorrilla
               </h2>
             </div>
+
+            <!-- tipo grid: row-cols define cuántas tarjetas se ven según el tamaño de pantalla -->
             <div
               class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 justify-content-center"
             >
+              <!-- Card: Desarrollo de Software -->
               <div class="col-lg-5">
                 <div class="card h-100">
                   <img
@@ -154,6 +162,7 @@
                 </div>
               </div>
 
+              <!-- Card: Telecomunicaciones -->
               <div class="col-lg-5">
                 <div class="card h-100">
                   <img
@@ -178,9 +187,11 @@
               </div>
             </div>
 
+            <!-- para nueva fila -->
             <div
               class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5 justify-content-center"
             >
+              <!-- Card: Mecatronica -->
               <div class="col-lg-5">
                 <div class="card h-100">
                   <img
@@ -204,6 +215,7 @@
                 </div>
               </div>
 
+              <!-- Card: Quimica Industrial -->
               <div class="col-lg-5">
                 <div class="card h-100">
                   <img
@@ -231,8 +243,8 @@
         </div>
       </section>
 
-      <!-- modal info TSDSM -->
-
+      <!-- ventanas modales (fuera del flujo normal para evitar mucha info) -->
+      <!-- modal de boostrap para mostrar la info relacionada con la carrera seleccionada TSDSM -->
       <div class="modal fade" id="modalTSDSM" tabindex="-1">
         <div
           class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered"
@@ -303,6 +315,14 @@
                     <li>- Asistencia al Módulo de Nivelación (80%)</li>
                     <li>- Aprobación del Módulo de Nivelación</li>
                   </ul>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Cerrar
+                  </button>
                 </div>
               </div>
             </div>
@@ -377,6 +397,15 @@
                     aspirantes que resulten aprobados serán seleccionados por
                     orden de mérito para completar un cupo máximo de 50 alumnos.
                   </p>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Cerrar
+                  </button>
                 </div>
               </div>
             </div>
@@ -453,6 +482,14 @@
                     <li>- Asistencia al Módulo de Nivelación (80%)</li>
                     <li>- Aprobación del Módulo de Nivelación</li>
                   </ul>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Cerrar
+                  </button>
                 </div>
               </div>
             </div>
@@ -534,6 +571,14 @@
                     un mínimo de 60%. Los aprobados serán seleccionados por
                     orden de mérito para completar el cupo máximo de 50 alumnos.
                   </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Cerrar
+                  </button>
                 </div>
               </div>
             </div>
@@ -542,6 +587,7 @@
       </div>
     </main>
 
+    <!--mt-auto ayuda a que el pie de página se mantenga abajo si hay poco contenido -->
     <footer
       class="py-5 footer mt-auto text-center text-body-secondary bg-institucional"
     >
