@@ -22,13 +22,12 @@
     />
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
-  <body>
+
+  <!-- Flex-column y vh-100 aseguran que el body ocupe toda la pantalla para empujar el footer -->
+  <body class="d-flex flex-column vh-100">
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-institucional">
         <div class="container-fluid">
-          <!-- <a class="navbar-brand col-lg-1 col-md-3 col-sm-2" href="#">
-            <img src="assets/img/logo.png" alt="Logo" class="img-fluid" />
-          </a> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -40,6 +39,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- justify-content-center para centrar los items del menú -->
           <div
             class="collapse navbar-collapse justify-content-center"
             id="navbarCollapse"
@@ -54,6 +55,7 @@
                 <a class="nav-link" href="institucional.html">Institucional</a>
               </li>
 
+              <!-- Menú desplegable carreras -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -68,7 +70,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSe9AzkgGNea0jdtr3HEZyaziWO0itybNdPm7Zp3DpDonwURNA/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Desarrollo de Software
                       Multiplataforma
@@ -78,7 +81,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeaGhLVM4zT5jYtDpLQ6-gmvi3j8pMadaFfIjMEYQMFuyjpCw/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Telecomunicaciones
                     </a>
@@ -87,7 +91,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdYjIW4UqZ6SQRwURy4IU10kXqP_S9oKIbhhLM_wdLJ4ejmOA/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Mecatronica
                     </a>
@@ -97,7 +102,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdGl1ZjXsuCFGwEbAGe1M1Acr5XZMtYjqhKlaSJGEVvUUuT0A/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Quimica Industrial
                     </a>
@@ -118,6 +124,7 @@
     <main>
       <section>
         <div class="container">
+          <!-- sección historia con acordeón -->
           <div class="accordion mx-2 my-5" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -210,10 +217,13 @@
       </section>
 
       <section>
+        <!-- seccion: misión, visión y estructura -->
         <div class="container">
           <h2 class="pb-2 border-bottom text-center">
             Misión, Visión y Estructura Organizativa
           </h2>
+
+          <!-- row-cols-lg-3 divide la fila en 3 columnas iguales  -->
           <div
             class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-around"
           >
@@ -241,6 +251,7 @@
             </div>
             <div class="col">
               <h5 class="text-body-emphasis">Estrutura organizativa</h5>
+              <!-- list-group de Bootstrap sin bordes (border-0) -->
               <ol class="list-group list-group-numbered small">
                 <li class="list-group-item border-0 text-muted m-0 p-0">
                   <b>Consejo Directivo:</b> Responsable de las definiciones
@@ -273,14 +284,18 @@
       </section>
 
       <section>
+        <!-- seccion: autoridades -->
         <div class="container">
           <h2 class="pb-2 border-bottom text-center">
             Autoridades de Instituto Politecnico Formosa
           </h2>
+          <!-- align-items-center asegura que las fotos y nombres se alineen verticalmente -->
           <div
             class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-around align-items-center"
           >
+            <!-- Col para cada perfil de autoridad -->
             <div class="col text-center">
+              <!-- rounded-circle clase de Bootstrap para img redondas -->
               <img
                 class="img-profile rounded-circle"
                 src="assets/img/director-ipf.jpeg"
