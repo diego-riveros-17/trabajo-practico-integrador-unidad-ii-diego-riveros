@@ -2,21 +2,22 @@
 
 **Materia:** Taller de Lenguaje de Programación I
 **Año:** 2026
-**Alumno:** Riveros Diego
+
+- Alumno: Riveros Diego
 
 ## Descripción
 
-Sitio web del Instituto Politecnico Formosa que incluye las siguientes paginas
-Inicio - index.html
-Institucional - institucional.html
-Oferta Academica - carreas.html
-Contacto - contacto.html
+- Sitio web del Instituto Politecnico Formosa que incluye las siguientes paginas
+- Inicio - index.html
+- Institucional - institucional.html
+- Oferta Academica - carreas.html
+- Contacto - contacto.html
 
 ## Tecnologías utilizadas
 
-HTML - Componente prearmados de Boostrap
-CSS - CDN-Boostrap
-JS - CDN Boostrap
+- HTML - Componente prearmados de Boostrap
+- CSS - CDN-Boostrap
+- JS - CDN Boostrap
 
 ## Componentes de Bootstrap utilizados
 
