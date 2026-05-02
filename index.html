@@ -22,13 +22,14 @@
     />
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
-  <body>
+
+  <!-- Flex-column y vh-100 aseguran que el body ocupe toda la pantalla para empujar el footer -->
+  <body class="d-flex flex-column vh-100">
     <header>
+      <!-- barra de navegacion, componente de bootstrap, navbar-expand-md hace que sea colapsable en dispositivos medianos -->
       <nav class="navbar navbar-expand-md navbar-dark bg-institucional">
         <div class="container-fluid">
-          <!-- <a class="navbar-brand col-lg-1 col-md-3 col-sm-2" href="#">
-            <img src="assets/img/logo.png" alt="Logo" class="img-fluid" />
-          </a> -->
+          <!-- Botón tipo hamburguesa para el menú móvil -->
           <button
             class="navbar-toggler"
             type="button"
@@ -40,6 +41,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- justify-content-center centra los items del menú -->
           <div
             class="collapse navbar-collapse justify-content-center"
             id="navbarCollapse"
@@ -53,7 +55,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="institucional.html">Institucional</a>
               </li>
-
+              <!-- Menú desplegable (Dropdown) para la oferta académica -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -68,7 +70,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSe9AzkgGNea0jdtr3HEZyaziWO0itybNdPm7Zp3DpDonwURNA/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Desarrollo de Software
                       Multiplataforma
@@ -78,7 +81,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSeaGhLVM4zT5jYtDpLQ6-gmvi3j8pMadaFfIjMEYQMFuyjpCw/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Telecomunicaciones
                     </a>
@@ -87,7 +91,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdYjIW4UqZ6SQRwURy4IU10kXqP_S9oKIbhhLM_wdLJ4ejmOA/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Mecatronica
                     </a>
@@ -97,7 +102,8 @@
                   <li>
                     <a
                       class="dropdown-item my-1 text-uppercase text-muted"
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdGl1ZjXsuCFGwEbAGe1M1Acr5XZMtYjqhKlaSJGEVvUUuT0A/closedform"
+                      target="_blank"
                     >
                       Tecnicatura Superior en Quimica Industrial
                     </a>
@@ -117,6 +123,7 @@
 
     <main>
       <section>
+        <!-- carrusel, data-bs-ride activa la animación automática al cargar -->
         <div
           id="carouselExample"
           class="carousel slide"
@@ -160,6 +167,7 @@
           </div>
 
           <div class="carousel-inner bg-black">
+            <!-- Primera diapositiva con video: vh-100 para que ocupe toda la altura de la pantalla -->
             <div class="carousel-item active vh-100" data-bs-interval="20000">
               <video
                 class="h-100 w-100 object-fit-fill"
@@ -173,6 +181,7 @@
               </video>
             </div>
 
+            <!-- se agrego la class vh-100 de bootstrap a cada img del carousel para ocupar el 100% de altura -->
             <div class="carousel-item vh-100" data-bs-interval="2000">
               <img
                 src="assets/img/Instituto-Politecnico-Formosa-IPF.jpeg"
@@ -211,12 +220,15 @@
         </div>
       </section>
 
+      <!-- seccion con cards de bootstrap, se agregaron clases como h-100 y el ratio para establecer el tamaño de la imagenes y que todas las tengan el mismo tamaño, m-5 añade margen general para separar del carrusel -->
       <section class="m-5">
         <h2 class="fw-bold text-center">El IPF te ofrece</h2>
 
         <div class="album py-3">
           <div class="container">
+            <!--  row-cols define cuántas columnas se ven según el tamaño de pantalla -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <!-- Card: Servicio de Transporte -->
               <div class="col">
                 <div class="card shadow-sm h-100 rounded">
                   <div class="ratio ratio-16x9">
@@ -228,7 +240,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Servicio de Transporte</h5>
-                    <p class="card-text">
+                    <p class="card-text small">
                       El instituto te ofrece traslado gratuito. Te recogemos en
                       puntos estrategicos de la ciudad.
                     </p>
@@ -236,6 +248,7 @@
                 </div>
               </div>
 
+              <!-- Card: Servicio de Comedor -->
               <div class="col">
                 <div class="card shadow-sm h-100 rounded">
                   <div class="ratio ratio-16x9">
@@ -247,7 +260,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Servicio de Comedor</h5>
-                    <p class="card-text">
+                    <p class="card-text small">
                       Cuando llegas a las instalaciones,te recibimos con el
                       desayuno para iniciar la jordana. Al mediodia tambien te
                       ofrecemos un almuerzo, con menú variado para toda la
@@ -257,6 +270,7 @@
                 </div>
               </div>
 
+              <!-- Card: Recursos Tecnológicos -->
               <div class="col">
                 <div class="card shadow-sm h-100 rounded">
                   <div class="ratio ratio-16x9">
@@ -270,7 +284,7 @@
                     <h5 class="card-title">
                       Recursos gratuitos y Profesionales altamente capacitados
                     </h5>
-                    <p class="card-text">
+                    <p class="card-text small">
                       Los alumnos cuentan dentro las instalaciones con los
                       recursos tecnologicos necesarios para su cursadas, cada
                       estudiante recibe una notebook de última generación con
@@ -285,10 +299,41 @@
       </section>
     </main>
 
+    <!-- Footer: mt-auto ayuda a que el pie de página se mantenga abajo si hay poco contenido -->
     <footer
-      class="py-5 footer mt-auto text-center text-body-secondary bg-institucional"
+      class="container-fluid mt-auto text-center text-muted bg-institucional"
     >
-      <p>Instituto Politecnico Formosa</p>
+      <div
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary">
+            &copy; 2026 Instituto Politecnico Formosa</span
+          >
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.instagram.com/ipformosa/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="bi bi-instagram fs-2 text-white"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.facebook.com/IPFormosa/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="bi bi-facebook text-white fs-2"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <script
